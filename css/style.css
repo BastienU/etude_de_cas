@@ -1,0 +1,133 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font: 1.6rem sans-serif; /* 16px 62.5% => 1.000*/
+	margin: 0;
+}
+h1,h2,h3,h4,ul,ol,p{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-weight: 100;
+}
+img{
+    display: inline-block;
+    width: 100%;
+   
+    /* object-fit: cover;
+    border-radius: 0 0 1rem 1rem; */
+}
+*{
+	box-sizing: border-box;
+}
+/* theme css */
+/* header{
+    background: #2980b9;
+} */
+header h1{
+   text-align: center;
+   line-height: 6.5rem;
+   color: #222;
+}
+header span img{
+    display: inline-block;
+    width: 5%;
+    transform : rotate(30deg);
+    border-radius: 0rem;
+    box-shadow: none;
+    vertical-align: middle;
+}
+main figure{
+    max-width: 80rem;
+    margin: 1rem auto;
+}
+figure h2{
+    text-align: center;
+    padding: 1rem;
+}
+section{
+    padding: 0.5rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.5);
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+section h3{
+    text-align: center;
+}
+section p{
+    text-align: center;
+    padding: 1rem;
+}
+section ul{
+    display: inline-block;
+    list-style: none;
+}
+section ul li:nth-child(1){
+    background-color: #ff7475;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    line-height: 37px;
+    color: #fff;
+    border-radius: 1rem 1rem 1rem 1rem;
+}
+section ul li:nth-child(2){
+    background-color: #6dbbdf;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    line-height: 37px;
+    color: #fff;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-left: 18rem;
+    margin-top: -4rem;
+}
+section ul li:nth-child(3){
+    background-color: #90c4c8;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    line-height: 37px;
+    color: #222;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-left: 36rem;
+    margin-top: -4rem;
+}
+section ul li:nth-child(4){
+    background-color: #ead920;
+    text-align: center;
+    width: 15rem;
+    height: 4rem;
+    line-height: 37px;
+    color: #222;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-left: 54rem;
+    margin-top: -4rem;
+}
+/* 
+section, footer{
+    max-width: 80rem;
+    margin: 2.0rem auto;
+    background: #fafafa;
+}
+section > h2{
+    text-align: center;
+    background: #34495e;
+    color: #fff;
+    line-height: 4.5rem;
+} */
+section p:nth-of-type(6){
+    text-align: center;
+    color: #0b873d;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    border-radius: 0 0 1rem 1rem;
+}
+section p span{
+    vertical-align: middle;
+}
+footer{
+    border: 0;
+    text-align: center;
+}
