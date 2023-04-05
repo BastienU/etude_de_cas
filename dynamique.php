@@ -1,6 +1,7 @@
 <?php
 include_once "./pages/head_var.inc.php";
 include_once "./pages/head.inc.php";
+include_once "./pages/produit.inc.php";
 ?>
 <body>
    <?php

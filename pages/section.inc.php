@@ -1,23 +1,34 @@
+<?php
+include_once "./pages/produit.inc.php"
+?>
+
 <section>
     <h3>
-        Produits disponibles
+        <?php print $produit["produit"] ?>
     </h3>
-    <img src="https://img.freepik.com/psd-gratuit/modele-maquette-ecran-pour-telephone-mobile-premium_53876-81688.jpg?w=1060&t=st=1680263822~exp=1680264422~hmac=d33cc205907bdfb0d74e5199cf04b77df68828ae47168f58ac054266466f83f3" alt="cover phone">
+    
+    <img src="<?php print $produit["image"] ?>">
 
     <p>
         Prix : 79.99€
     </p>
     <p>
-        Tous les nouveaux produits disponibles dans nos magasins. Voici les coloris
+        <?php print $produit["description"] ?>
     </p>
     <ul>
-        <li>rouge</li>
+    <?php foreach (couleurs as $key => $value) {
+        //condition
+        $key !== "couleurs" ? print "<li>"." ".$value."</li>":
+        print '<li>'.' <a href="mailto: '.$value.'">'.$value.'</a></li>';
+    }?>
+        <!-- <li>rouge</li>
         <li>bleu</li>
         <li>vert</li>
-        <li>jaune</li>
+        <li>jaune</li> -->
     </ul>
     <p>
         En stock
+        <?php print $produit["stock"] ?>
         <span class="material-symbols-outlined" aria-hidden="true">
             shopping_cart
         </span>
