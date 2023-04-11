@@ -28,7 +28,6 @@ include_once "./pages/produit.inc.php"
     </ul>
     <p>
         En stock
-        <?php print $produit["stock"] ?>
         <span class="material-symbols-outlined" aria-hidden="true">
             shopping_cart
         </span>
